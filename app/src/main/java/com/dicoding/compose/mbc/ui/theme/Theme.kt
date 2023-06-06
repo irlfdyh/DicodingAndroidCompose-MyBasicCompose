@@ -18,13 +18,15 @@ import androidx.core.view.WindowCompat
 private val DarkColorScheme = darkColorScheme(
     primary = Purple80,
     secondary = PurpleGrey80,
-    tertiary = Pink80
+    tertiary = Pink80,
+    onPrimary = Chartreuse
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
+    primary = LightBlue,
     secondary = PurpleGrey40,
-    tertiary = Pink40
+    tertiary = Pink40,
+    onPrimary = Navy
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),
@@ -64,6 +66,7 @@ fun MyBasicComposeTheme(
 
     MaterialTheme(
         colorScheme = colorScheme,
+        shapes = Shapes,
         typography = Typography,
         content = content
     )
